@@ -4,6 +4,7 @@ import Qs from 'qs'
 
 let axiosIns = axios.create({});
 let env = process.env.NODE_ENV
+console.log(env)
 //根据process.env.NODE_ENV配置不同的BaseUrl
 if (process.env.NODE_ENV == 'development') {
     axiosIns.defaults.baseURL = 'http://development'
