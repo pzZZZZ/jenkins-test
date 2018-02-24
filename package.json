@@ -5,10 +5,10 @@
   "author": "PZ <pengzhan@mistong.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 172.16.211.149 &&set NODE_ENV=development",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 172.16.211.149 &&cross-env NODE_ENV=development",
     "start": "npm run dev",
-    "233test":"set NODE_ENV=233 && node build/build.js",
-    "226test":"set NODE_ENV=226 && node build/build.js",
+    "233test": "cross-env NODE_ENV=233 && node build/build.js",
+    "226test": "cross-env NODE_ENV=226 && node build/build.js",
     "build": "node build/build.js"
   },
   "dependencies": {
@@ -29,6 +29,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.3",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",

@@ -65,3 +65,5 @@ let globalJsBridge;
 - 提交 mutation 是更改状态的唯一方法，并且这个过程是同步的。
 
 - 异步逻辑都应该封装到 action 里面。
+
+## 引入cross-env解决Linux与win下NODE_ENV不同的问题
