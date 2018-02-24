@@ -5,10 +5,10 @@
   "author": "PZ <pengzhan@mistong.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 172.16.211.149 &&cross-env NODE_ENV=development",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 172.16.211.149 ",
     "start": "npm run dev",
-    "233test": "cross-env NODE_ENV=233 && node build/build.js",
-    "226test": "cross-env NODE_ENV=226 && node build/build.js",
+    "233test": "cross-env NODE_ENV=233  node build/build.js",
+    "226test": "cross-env NODE_ENV=226 node build/build.js",
     "build": "node build/build.js"
   },
   "dependencies": {
