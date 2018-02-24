@@ -3,15 +3,16 @@ import Qs from 'qs'
 //post请求需用QS序列化处理
 
 let axiosIns = axios.create({});
-
+let env = process.env.NODE_ENV
+//根据process.env.NODE_ENV配置不同的BaseUrl
 if (process.env.NODE_ENV == 'development') {
-    axiosIns.defaults.baseURL = 'development';
-} else if (process.env.NODE_ENV == '233') {
-    axiosIns.defaults.baseURL = '233';
-} else if (process.env.NODE_ENV == '226') {
-    axiosIns.defaults.baseURL = '226';
+    axiosIns.defaults.baseURL = 'http://development'
+} else if (process.env.NODE_ENV == 233) {
+    axiosIns.defaults.baseURL = 'http://233.miscom'
+} else if (process.env.NODE_ENV == 226) {
+    axiosIns.defaults.baseURL = '226'
 } else if (process.env.NODE_ENV == 'production') {
-    axiosIns.defaults.baseURL = 'production';
+    axiosIns.defaults.baseURL = 'http://production'
 }
 
 export function getUser(params) {

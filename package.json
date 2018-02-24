@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 172.16.211.149 &&set NODE_ENV=development",
     "start": "npm run dev",
-    "233":"node build/build.js&&set NODE_ENV=233",
+    "233test":"set NODE_ENV=233 && node build/build.js",
     "build": "node build/build.js"
   },
   "dependencies": {

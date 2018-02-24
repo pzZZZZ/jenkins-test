@@ -1,8 +1,17 @@
 'use strict'
 require('./check-versions')()
-
-process.env.NODE_ENV = 'production'
-
+let env = null
+if (process.env.NODE_ENV == '233') {
+  env = '233';
+} else if (process.env.NODE_ENV == '226') {
+  env = '226';
+} else {
+  env = 'production';
+}
+// console.log(process.env.NODE_ENV)
+// process.env.NODE_ENV = 'production'
+// process.env.NODE_ENV = env
+// console.log(process.env.NODE_ENV)
 const ora = require('ora')
 const rm = require('rimraf')
 const path = require('path')
