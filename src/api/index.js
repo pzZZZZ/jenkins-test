@@ -31,9 +31,9 @@ export function getDefault(params) {
 export function get360(params) {
     return axiosIns({
         method: 'post',
-        url: "http://172.16.211.61:8000/WebView/GetQuestionById",
+        url: "/WebView/GetQuestionById",
         data: Qs.stringify(params)
     })
 
 }
-export default axiosIns
+// export default axiosIns
