@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'development') {
 } else if (process.env.NODE_ENV == 233) {
     axiosIns.defaults.baseURL = 'http://233.miscom'
 } else if (process.env.NODE_ENV == 226) {
-    axiosIns.defaults.baseURL = '226'
+    axiosIns.defaults.baseURL = 'http://226.miscom'
 } else if (process.env.NODE_ENV == 'production') {
     axiosIns.defaults.baseURL = 'http://production'
 }
