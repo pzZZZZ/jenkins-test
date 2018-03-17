@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <group>
-            <div @click="getuserMsg">获取用户信息</div>
-            <!-- <cell-box >
+  <div>
+    <group>
+      <div @click="getuserMsg">获取用户信息</div>
+      <!-- <cell-box >
                 
             </cell-box> -->
-        </group>
-    </div>
+    </group>
+  </div>
 </template>
 <script>
 import { CellBox, Group, Cell } from "vux";
@@ -49,9 +49,7 @@ export default {
         });
       }
 
-      executeCommand(
-        'mistong://{"domain":"user", "action":"info"}'
-      );
+      executeCommand('mistong://{"domain":"user", "action":"info"}');
     }
   }
 };
