@@ -42,7 +42,7 @@ export default {
   },
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      msg: "Welcome to Your Vue.js Ap12p",
       card: [1, 2, 3, 4],
       show1: false
     };

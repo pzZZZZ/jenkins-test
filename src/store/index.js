@@ -1,13 +1,22 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
-import mutations from './mutations'
-import actions from './actions'
-import { state, getters } from './modules/index'
+
 Vue.use(Vuex)
 const store = new Vuex.Store({
-    state,
-    mutations,
-    getters,
-    actions
+    state: {
+        musicid: null
+    },
+    mutations: {
+        changeid(state, id) {
+            // 变更状态
+            state.musicid = id
+        }
+    },
+    actions: {
+        changeid({ commit, state }, id) {
+            commit('changeid', id)
+        }
+    }
+
 })
 export default store

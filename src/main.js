@@ -11,7 +11,7 @@ Vue.prototype.$bridge = jsbridge
 
 FastClick.attach(document.body)
 Vue.config.productionTip = false
-document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px'; //750设计稿
+// document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px'; //750设计稿
 
 /* eslint-disable no-new */
 new Vue({

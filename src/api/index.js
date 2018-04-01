@@ -38,4 +38,18 @@ export function get360(params) {
     })
 
 }
+export function searchPlayList(params) {
+    return axiosIns({
+        method: 'get',
+        url: "https://music-api-jwzcyzizya.now.sh/api/search/song/qq",
+        params: params
+    })
+}
+export function searchMusicurl(params) {
+    return axiosIns({
+        method: 'get',
+        url: 'https://music-api-jwzcyzizya.now.sh/api/get/song/qq',
+        params: params
+    })
+}
 // export default axiosIns
